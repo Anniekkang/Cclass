@@ -1,5 +1,4 @@
 #include <assert.h>
-
 #include "cyber_spaceship.h.txt"
 
 #define CAB_LENGTH (50)
@@ -9,7 +8,6 @@ int main(void)
     char cab[CAB_LENGTH];
     const char* cluster_start_addresses[5];
     size_t cluster_lengths[5];
-
     size_t out_longest_safe_area_length = 0;
     size_t* out_longest_safe_area_length_p = &out_longest_safe_area_length;
     const char* longest_safe_cluster_start_address;
@@ -38,4 +36,5 @@ int main(void)
     assert(time_in_mins == 7);
 
     return 0;
-}  
+}
+
