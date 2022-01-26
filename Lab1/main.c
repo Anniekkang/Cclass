@@ -1,7 +1,11 @@
-#include "add.h.txt"
+#include "add.h"
+#include <stdio.h>
+
 
 int main(void)
 {
-    return 5;
+    printf("hello");
+    return 0;
+
 }
 

@@ -1,14 +1,10 @@
-#include "array.h.txt"
+#ifndef ARRAY_H
+#define ARRAY_H
 
-int get_index_of(const int numbers[], const size_t element_count, const int num)
-{ 
-	size_t i;
-	for (i=0; i<elemen_count; ++i){
-	 if (numbers[i] == num){
-	 return i;}
-	}
-	 return -1;
-}
+#define TRUE (1)
+#define FALSE (0)
+
+int get_index_of(const int numbers[], const size_t element_count, const int num);
 
 int get_last_index_of(const int numbers[], const size_t element_count, const int num);
 
@@ -24,4 +20,5 @@ int insert(int numbers[], const size_t element_count, const int num, const size_
 
 int remove_at(int numbers[], const size_t element_count, const size_t index);
 
+#endif /* ARRAY_H */
 

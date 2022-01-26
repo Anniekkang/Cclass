@@ -1,36 +1,15 @@
 #include <assert.h>
-#include "cyber_spaceship.h.txt"
-
-
-const char* const cab_start_location;
-const size_t cab_length;
-const char* const cluster_start_location[];
-const size_t cluster_count;
-
-
+#include "cyber_spaceship.h"
 
 const char* get_longest_safe_zone_or_null(const char* const cab_start_location, const size_t cab_length, const char* const cluster_start_locations[], const size_t cluster_lengths[], const size_t cluster_count, size_t* out_longest_safe_area_length)
 
-  {  
-      if (cluster_count == 0){
-          
-        size_t* out_longest_safe_area_length = cab_length;
-        return out_longest_safe_area_length;
-    } else if (cluster_count == 1){
-        int front_safe_length = *cluster_start_locations[0] - *cab_start_location;
-        int back_safe_length = *cab_end_location - (*cluster_start_locations[0] + cluster_lengths[0]);
+{
 
-        if (front_safe_length>back_safe_length){
-            return front_safe_length;
-        }else { return back_safe_length;}
+	
 
 
-
-    }
 
 }
-
-
 
 int get_travel_time(const char* const cab_start_location, const size_t cab_length, const char* const cluster_start_locations[],  const size_t cluster_count)
 {

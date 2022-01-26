@@ -1,5 +1,5 @@
 #include <assert.h>
-#include "cyber_spaceship.h.txt"
+#include "cyber_spaceship.h"
 
 #define CAB_LENGTH (50)
 
