@@ -3,50 +3,51 @@
 #include "my_string.h"
 
 
-void reverse(char* str) {
-	size_t str_len ;
-	char* str;
+void reverse(char* str) 
+{
+
+size_t i;
+size_t strCount(char* str);
+size_t length = strCount(str);
 
 
-	size_t String_Length(char* string) 
-	{ size_t count;
-	 const char* p = string;
-		while(*p++ != '\0') 
-		{
-			++count;
-		} 
-		
-		return count;
-	}
+size_t strCount(char* str)
+{
+ size_t count = 0;
+ const char* P = str;
 
-	size_t String_Length(char* str) = str_len;
+ while(*P++ != '\0')
+ 	{
+		++count;
+ 	}
 
-	if (str_len == 0) 
+ return count;
+}
+
+if (length == 0)
+{
+	return (char *str);
+}
+else if (length % 2 == 0)
+{
+	(i=0; i<length; i++)
 	{
-		return 0;
+		*str[i] = *str[length-1];
 	}
-	else if (str_len %2 == 0) 
-	{ 	size_t i;
-		for (i=1; i<= str_len; i++){
-			*str[i/2 - 1] = *str[i/2];
-			return *str;
-
-		}
-
-
+	printf(char *str);
+}
+else 
+{	
+	(i=0; i<length; i++)
+	{
+		*str[i] = *str[length-1];
 	}
-	
+	printf(char *str - char *str[(length-1)/2];	 
+
+}	
 }
 
-int index_of(const char* str, const char* word) {
-
-
-
-
-
-
-
-}
+int index_of(const char* str, const char* word) ;
 
 void reverse_by_words(char* str);
 
