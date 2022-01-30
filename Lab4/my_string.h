@@ -12,3 +12,4 @@ char* tokenize(char* str_or_null, const char* delims);
 char* reverse_tokenize(char* str_or_null, const char* delims);
 
 #endif /* MY_STRING_H */
+
