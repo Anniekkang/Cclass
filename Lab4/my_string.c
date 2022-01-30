@@ -12,19 +12,22 @@ size_t strLength(char* str){
 }
 
 
-void reverse(char* str){
+void reverse(char* str)
+{
 	size_t i;
 
-	if (strLength(str) == 0){
+	if (strLength(str) == 0)
+	{
 		printf("%s", str);
 	}
-	else {
-		for (i=0; i< strLength(str); i++){
+	else 
+	{
+		for (i=0; i< strLength(str); i++)
+		{
 			str[i] = str[strLength(str)-1-i];
 		}
 	}
-
-	}
+}
 
 int index_of(const char* str, const char* word);
 
