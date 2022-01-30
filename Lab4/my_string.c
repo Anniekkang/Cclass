@@ -26,7 +26,7 @@ size_t length = strCount(str);
 
 if (length == 0)
 {
-	printf("%p",(void*)*str);
+	printf("%d",*str);
 }
 else 
 {
@@ -34,7 +34,7 @@ else
 	{
 		str[i] = str[length-1-i];
 	}
-	printf("%p",(void*)*str);
+	printf("%d",*str);
 }
 }
 
