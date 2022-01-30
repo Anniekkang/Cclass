@@ -2,43 +2,31 @@
 #include <string.h>
 #include "my_string.h"
 
-size_t strCount(char* str)
-	{
- 		size_t count = 0;
- 		const char* P = str;
- 		while(*P++ != '\0')
- 		{
-			++count;
- 		}
+size_t strLength(char* str){
+	size_t count = 0;
+	char* p = str;
+	while (*p != '\0'){
+		++count;
+	}
+	return count;
+}
 
- 	return count;
+
+void reverse(char* str){
+	size_t i;
+
+	if (strLength(str) == 0){
+		printf("%s", str);
+	}
+	else {
+		for (i=0; i< strLength(str); i++){
+			str[i] = str[strLength(str)-1-i];
+		}
 	}
 
-
-void reverse(char* str) 
-{
-
-size_t i;
-size_t length = strCount(str);
-
-
-
-
-if (length == 0)
-{
-	printf("%d",*str);
-}
-else 
-{
-	for (i=0; i<length; i++)
-	{
-		str[i] = str[length-1-i];
 	}
-	printf("%d",*str);
-}
-}
 
-int index_of(const char* str, const char* word) ;
+int index_of(const char* str, const char* word);
 
 void reverse_by_words(char* str);
 
