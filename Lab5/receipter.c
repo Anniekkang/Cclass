@@ -2,7 +2,13 @@
 #include <stdio.h>
 #include <time.h>
 
-int add_item(const char* name, double price);
+int add_item(const char* name, double price) {
+
+	
+
+
+
+}
 
 void set_tip(double tip) 
 {
