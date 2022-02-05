@@ -1,49 +1,30 @@
 #include "receipter.h"
 #include <stdio.h>
+#include <time.h>
 
-int add_item(const char* name, double price)
+int add_item(const char* name, double price);
+
+void set_tip(double tip) 
 {
-	char* name;
-	double price;
-	char* eachfoodname[26];
-	char* foodname[11];
-	double eachfoodprice;
 	int c;
-	int d;
+	c = getchar();
 
-	eachfoodname = getchar(name);
-	c = putchar(eachfoodname);
 	if (c == EOF) {
-		return false;
-	}
-	else {
-		if (c / sizeof(c[0]) > 26) {
-			return false;
-		}
+		printf("causing error, plese write tip price again");
 		return;
 	}
 
-	eachfoodprice = getchar(price);
-	d = putchar(eachfoodprice);
-	if (d == EOF) {
-		return false;
-	}
-	else {
-		if (eachfoodprice > 999.99) {
-			return false;
-		}
+	if (tip > 999.99) {
+		printf("causing error, plese write tip price again");
 		return;
 	}
 
-
+	printf("%f", tip);
+	
 	
 
 
-
-
-	
 }
-void set_tip(double tip);
 
 void set_message(const char* message);
 

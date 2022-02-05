@@ -13,3 +13,4 @@ void set_message(const char* message);
 int print_receipt(const char* filename, time_t timestamp);
 
 #endif /* RECEIPTER_H */
+
