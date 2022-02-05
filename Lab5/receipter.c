@@ -24,6 +24,10 @@ void set_tip(double tip)
 		printf("causing error, plese write tip price again");
 		return;
 	}
+	if (tip <= 0) {
+		return NULL;
+
+	}
 
 	printf("%f", tip);
 	
